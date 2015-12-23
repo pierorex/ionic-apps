@@ -4,8 +4,7 @@ npm install -g cordova ionic
 ionic serve -p $PORT nolivereload
 # Now go to preview -> preview running application
 
-
 # For Android:
 sudo apt-get install --yes python-software-properties python g++ make ant openjdk-7-jre openjdk-7-jdk
 sudo apt-get remove android-tools-adb android-tools-fastboot
-wget http://dl.google.com/android/android-sdk_r22.6.2-linux.tgz
+wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
