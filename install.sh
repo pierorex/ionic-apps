@@ -1,7 +1,12 @@
+# start the ionic-tutorial server to give the information about
+# sessions
+
+nodejs ionic-tutorial/server/server.js
+
 wget -qO- https://deb.nodesource.com/setup_4.x | sudo bash -
 sudo apt-get install --yes nodejs
 npm install -g cordova ionic
-ionic serve -p $PORT nolivereload
+ionic serve -p $PORT --nolivereload
 # Now go to preview -> preview running application
 
 # For Android:
@@ -31,3 +36,7 @@ ionic platform add android
 # to reflect the proper android version that you want to target the build.
 
 ionic build android
+# .apk file will be inside platforms/build/outputs/apk
+
+# For in-app browser of the native app (have to run 'ionic build android' again)
+cordova plugins add org.apache.cordova.inappbrowser
